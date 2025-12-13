@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        :root{
+            --blue:#2A4BFF;
+            --white:#F7F9FC;
+            --pink :#FF4D67;
+            --gray:#8C8C8C;
+            --text:#111111;
+           }
+
+        .form{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            width: fit-content;
+            background: linear-gradient(var(--blue),var(--white), var(--blue));
+            padding: 20px;
+            color: white;
+            margin: 0 auto; 
+            border-radius: 10px;
+            margin:20px;
+            text-align: left;
+            
+        }
+        .sign-up 
+        {
+             text-align: center;
+             color: var(--blue);
+         }
+
+         .sign-up a{
+            color:var(--blue);
+         }
+          
+         .form label{
+                    min-width: 150px;
+                    min-height: 50px;   
+                }
+
+
+        .form input{
+            min-width: 100px;
+            max-height: fit-content;
+            padding: 8px 12px;
+        }
+         .form button{
+            background-color:var(--white);
+            color:var(--blue);
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+            margin: 0 50%;
+         }
+         .form button:hover{
+            background-color: var(--blue);
+            color: var(--white);
+         }
+        @media (max-width:450px) {
+            .form
+            {
+                margin: 5px;
+            }
+
+          .form label{
+                    min-width: 50px;
+                    min-height: 50px;   
+                }
+
+
+        .form input{
+            min-width: 100px;
+        }
+         }
+
+    </style>
+</head>
+<body>
+<div class="sign-up">
+    <h1>Foodie Fast Delivery</h1>
+  <p><a href="signup.html" style="text-decoration:none;">Create account</a></p>
+    <a href="login.html">or login</a>
+    <form>
+    <div class="form">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+      <label for="email">Email</label  >
+      <input type="email" id="email">
+      <label for="mob">Mobile</label>
+      <input type="number" id="mob" >
+    <a href="account-created.html">
+  <button type="button">Create</button>
+</a>
+
+    </div>
+    </form>
+</div>
+    
+</body>
+</html>
