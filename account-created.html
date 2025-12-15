@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body{
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              background-color:white ;
-        }
-        :root{
-            --blue:#2A4BFF;
-            --white:#F7F9FC;
-            --pink :#FF4D67;
-            --gray:#8C8C8C;
-            --text:#111111;
-        }
-        .success{
+
+        
+     .success{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,8 +17,8 @@
             margin-top: 2%;
         }
         .success p,a{
-            font-size: 50px;
-            color:var(--blue);
+            font-size: 25px;
+            color:black;
             opacity: 0;
             animation:success-msg 1s 2s linear forwards;
         }
@@ -38,12 +29,12 @@
             
         }
         .success-circle{
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
             border:5px solid #52c13618;
             border-radius: 50%;
             animation:success 4s linear forwards;
-            border-right: 5px solid var(--blue);
+            border-right: 5px solid #000000
         }
         @keyframes success {
 
@@ -53,7 +44,7 @@
               }
               100%{
                 transform: rotateZ(-360deg);
-                border:5px solid var(--blue);
+                border:5px solid black;
                 background-image: url(./images/tick2.png);
                 background-size: contain;
                 
@@ -66,21 +57,50 @@
             width: 100px;
         }
         .success p,a{
-            font-size: large;
+            font-size: smaller;
         }
     }
+         .illustration img {
+            max-width: 100%;
+            height: auto;
+        }
+
     </style>
+    <title>WalkInHub</title>
 </head>
+
 <body>
-    
-    
-    <div class="success">
+    <header id="navigation">
+        <div class="navigation">
+            <img src="./images/logo.png" alt="logo" title="Website logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="signup.html"><img src="./images/account.png"> </a>
+            </nav>
+        </div>
+    <main>
+      <section id="banner">  
+        <div class="banner">
+            <div class="branding">
+                <div class="success">
         
-        <div class="success-circle"></div>
-        <p>Account Created Successfully....!</p>
-        <p>Goto Login Page.....<a href="login.html"> click</p></a>
+                    <div class="success-circle"></div>
+                    <p>Account Created Successfully....!</p>
+                    <p>Goto Login Page.....<a href="login.html"> click</p></a>
     </div>
- 
-    
+
+                
+            </div>
+            <div class="illustration">
+                  <img src="./images/job-searching.svg">
+
+               </div>
+
+        </div>
+    </section>
+    </main>
+
+    </header>
 </body>
 </html>

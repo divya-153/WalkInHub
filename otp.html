@@ -3,120 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style.css">
     <style>
 
-       body{
-            margin: 0;
-            padding: 0;
-            background: white;
+        .login{
             display: flex;
-            justify-content: center;
-            height: 100vh;
+            flex-direction: column;
+            align-items: center; 
+            justify-self: center;
+            gap: 20px;
 
         }
-        :root{
-            --blue:#2A4BFF;
-            --white:#F7F9FC;
-            --pink :#FF4D67;
-            --gray:#8C8C8C;
-            --text:#111111;
+        .login a{
+            font-size: 17px;
         }
-        
+          
         .form{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
-            width: fit-content;
-            background: linear-gradient(var(--blue), var(--white),var(--blue));
             padding: 20px;
-            color: var(--white);
+            color: black;
+            font-size: 17px;
+            font-weight: 600;
             margin: 0 auto; 
             border-radius: 10px;
-            margin: 20px;
-            text-align: left;
-            
+            text-align: left;    
+            border: 3px solid var(--blue);
+            max-width: 500px;
+            width: 100%;
+
         }
-        .sign-up 
-        {
-             text-align: center;
-             color: var(--blue);
-         }
-
-         .sign-up a{
-            color: var(--blue);
-         }
-          
-         .form label{
-                    min-width: 150px;
-                    min-height: 50px;   
-                }
-
-
         .form input{
             min-width: 100px;
             max-height: fit-content;
             padding: 8px 12px;
         }
-         .form button{
-           
-            background-color: var(--white);
-            color:var(--blue);
+          .form label{
+                    min-width: 150px;  
+                }
+        .button{
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-size: 17px;
             font-weight: 600;
-            padding: 10px;
-            border-radius: 5px;
-            width: fit-content;
+            min-width: 100px;
+            transition: all 0.3s ease;
+            max-width: 180px;
+            border: 3px solid var(--blue);
+            color: var(--blue);
+            background-color: white;
+            text-decoration: none;
+            text-align: center;
          }
-         .form button:hover{
-            background-color:var(--blue);
-            color: var(--white);
+         .button:hover{
+            background-color: var(--blue) ;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            border: 2px solid white;
          }
-         .sub-resent{
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            
-        
+         .illustration img {
+            max-width: 100%;
+            height: auto;
         }
-         
 
-        @media (max-width:450px) {
+          @media (max-width:450px) {
             .form
             {
                 margin: 5px;
+                grid-template-columns: 1fr;
+                gap:10px;
             }
 
           .form label{
-                    min-width: 50px;
-                    min-height: 50px; }  
-        .form input{
-            min-width: 100px;
-        }
-         }
+                    min-width: 50px;   
+                }
 
-       
+            .form input{
+                min-width: 100px;
+                margin-left: 15px;
+            }
+         
+    }
+
     </style>
+    <title>WalkInHub</title>
 </head>
+
 <body>
-<div class="sign-up">
-    <h1>Foodie Fast Delivery</h1>
-    <p><a href="login.html" style="text-decoration:none;">Login</a></p>
-  <a href="signup.html" >or Create account</a>
-    
-    <form>
-    <div class="form">
-      <label for="mob">Mobile</label>
-      <input type="number" id="mob">
-      <label for="otp">OTP</label>
-      <input type="password" id="otp">
-    <div class="sub-resent">
-      <button type="button">Resent OTP</button>
-      <a href="index.html"> <button type="button">Submit</button></a>
-    </div>
-    </div>
+    <header id="navigation">
+        <div class="navigation">
+            <img src="./images/logo.png" alt="logo" title="Website logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="signup.html"><img src="./images/account.png"> </a>
+            </nav>
+        </div>
+    <main>
+      <section id="banner">  
+        <div class="banner">
+            <div class="branding">
+                <form>
+            <div class="login">
+                <h2>Login <a href="signup.html"> or don't have account ?</a></h2>
+                
+                <form>
+                   <div class="form">
+                                    <label for="mob">Mobile</label>
+                                    <input type="number" id="mob" placeholder="Enter mobile number" required>
+                                    <label for="otp">OTP</label>
+                                    <input type="password" id="otp" placeholder="Enter 6 Digit code" required>
+                        </div>
+                </form>
+<div class="buttons">
+                                <a href="#" class="button">Resent OTP</a> 
+                                <a href="index.html" class="button">Submit</a> 
+                        </div>    </div>
     </form>
-</div>
-    
+            </div>
+            <div class="illustration">
+                  <img src="./images/job-searching.svg">
+
+               </div>
+
+        </div>
+    </section>
+    </main>
+
+    </header>
 </body>
 </html>

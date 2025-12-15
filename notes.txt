@@ -7,3 +7,58 @@
 #28a745
 #1c1c1c
 Light grey (#f7f7f7)
+
+
+
+/* circle */
+/* .ani-circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--pink);
+    transform: translate(-50%, -50%) scale(1);
+    animation: introCircle 1.8s ease-out forwards;
+    z-index: 1; 
+    border: 1px solid white;
+
+}
+    
+@keyframes introCircle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        background: var(--pink);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(4);
+        background: #dc8899;
+    }
+
+    60% {
+        transform: translate(-50%, -50%) scale(15);
+        background: #db0c35b2;
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(80);
+        background:#db0c35;
+    }
+
+    100% {
+        display: none;             
+        
+    }
+}
+ */
+
+
+
+
+
+
+ 
+
