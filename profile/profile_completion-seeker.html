@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+         .form{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            padding: 20px;
+            color: black;
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 10px;
+            text-align: left;    
+            border: 3px solid var(--blue);
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid var(--blue);
+            background-color: white;
+        }
+        .form input{
+            min-width: 100px;
+            max-height: fit-content;
+            padding: 8px 12px;
+        }
+        .form label{
+                    min-width: 150px;  
+                }
+        .form button{
+            border-radius: 20px;
+            padding: 10px 28px;
+            font-size: 17px;
+            font-weight: 600;
+            min-width: 80px;
+            transition: all 0.3s ease;
+            max-width: 150px;
+            border:3px solid var(--blue);
+        }
+
+        .form button:hover{
+            background-color: var(--blue);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white;
+        
+        }
+         @media (max-width:450px) {
+            .form
+            {
+                margin: 5px;
+                grid-template-columns: 1fr;
+                gap:10px;
+            }
+
+          .form label{
+                    min-width: 50px;
+                    
+                }
+
+            .form input{
+                min-width: 100px;
+                margin-left: 15px;
+            }
+         
+    }
+    </style>
+    <title>Profile- Completion</title>
+</head>
+<body>
+    <header id="navigation">
+        <div class="navigation">
+            <img src="../images/logo.png" alt="logo" title="Website logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./auth/signup.html"><img src="../images/account.png"> </a>
+            </nav>
+        </div>
+    </header>
+<main> 
+    <h1> Complete Your Profile</h1>
+    <form action="#" method="post">
+  <div class="form">
+
+    <!-- Personal Info -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mobile">Mobile Number</label>
+    <input type="tel" id="mobile" name="mobile" required>
+
+    <!-- Location -->
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="area">Area / Locality</label>
+    <input type="text" id="area" name="area" required>
+
+    <!-- Job Preference -->
+    <label for="role">Preferred Job Role</label>
+    <input type="text" id="role" name="role" required>
+
+    <label for="experience">Experience</label>
+    <select id="experience" name="experience" required>
+      <option value="">Select</option>
+      <option>Fresher</option>
+      <option>0–1 Years</option>
+      <option>1–3 Years</option>
+      <option>3+ Years</option>
+    </select>
+
+    <!-- Education -->
+    <label for="qualification">Highest Qualification</label>
+    <select id="qualification" name="qualification" required>
+      <option value="">Select</option>
+      <option>SSLC</option>
+      <option>HSC</option>
+      <option>Diploma</option>
+      <option>UG</option>
+      <option>PG</option>
+      <option>ITI</option>
+    </select>
+
+    <label for="course">Course / Degree</label>
+    <input type="text" id="course" name="course"
+           placeholder="e.g. BSc Computer Science" required>
+
+    <label for="college">College / Institute</label>
+    <input type="text" id="college" name="college" required>
+
+    <label for="year">Year of Passing</label>
+    <input type="number" id="year" name="year"
+           placeholder="2023" min="1980" max="2035" required>
+
+    <!-- Relocation -->
+    <label class="full-width">Willing to Relocate?</label>
+    <div class="radio-group full-width">
+      <label>
+        <input type="radio" name="relocate" value="yes" required> Yes
+      </label>
+      <label>
+        <input type="radio" name="relocate" value="no"> No
+      </label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Save Profile</button>
+
+  </div>
+</form>
+
+    </form>
+</main>
+</body>
+</html>
