@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>WalkInHub - Profile</title>
+    <style>
+      .profile-page{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-self: center; 
+        text-align: center;
+      }
+        .intro-text h1{
+            font-weight: 600 !important;
+            color: #111111;
+            font-size: 36px;
+        }
+
+        .intro-text h3{
+            font-weight: 400;
+            color:#444444 ;
+            line-height: 1.5;
+        }
+      .seeker-card{
+        height: 300px;
+        width: 350px;
+        border: 3px solid var(--blue);
+        border-radius: 15px;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        font-size: larger;
+      }
+        .profile-img {
+            display: flex;
+            align-items: center;
+        }
+        .profile-img img{
+            width: 80px;
+        }
+        .banner{
+            align-items: start;
+        }
+
+        .seeker-card button{
+            border-radius: 20px;
+            padding: 13px 28px;
+            font-size: 17px;
+            font-weight: 600;
+            min-width: 80px;
+            transition: all 0.3s ease;
+            max-width: 180px;
+            border:3px solid var(--blue);
+        }
+
+        .seeker-card button:hover{
+            background-color: var(--blue);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        @media (max-width:768px) {
+            .seeker-card{
+                width:250px;
+                height: auto;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+     <header id="navigation">
+        <div class="navigation">
+            <img src="../images/logo.png" alt="logo" title="Website logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./auth/signup.html"><img src="../images/account.png"> </a>
+            </nav>
+        </div>
+</header>
+<main>
+<div class="profile-page">  
+    <div class="intro-text" > 
+        <h1>Choose Your Profile</h1>
+        <h3>This help us personalize your experience</h3>      
+    </div>
+    <div class="banner">
+       
+        <div class="seeker-card">
+            <div class="profile-img">
+                        <img src="../images/briefcase.png">
+                        <h4>Job Seeker</h4>
+            </div>
+            <p>Find daily walk-in jobs near you...!</p>
+            <button type="button">Continue</button>
+        </div>
+
+        <div class="seeker-card">
+            <div class="profile-img">
+                    <img src="../images/office.png">
+                    <h4>HR / Recruiter</h4>
+            </div>
+            <p>Post walk-in interviews and hire faster</p>
+            <button type="button">Continue</button>
+        </div>
+
+                
+    </div>
+
+</div> 
+
+</main>
+    
+</body>
+</html>
